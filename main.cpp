@@ -254,7 +254,7 @@ int main() {
   RoomArray[14] = &NavRoom;
 
 
-  REPEAT:
+  do {
   if(SanityLastUpdate < 1)
   {
     system("clear");
@@ -547,15 +547,9 @@ else
     }
   
   SanityLastUpdate = Player.Sanity;
-  if (!Gamefinished)
-  {
-    goto REPEAT;
-  }
-  else
-  {
+  } while (!Gamefinished);
     cout << "you tap the button on the display for pod 5 and climb into the escape pod. The lid closes and the pod slides back into its bay and you hear the door close behind you. A holographic display projected on the glass in front of your face displays a counter.\n10...\n9...\nYou begin to fasten a harness similar to a seatbelt to your chest and slide your right hand into the combination EEG/ECG monitor at your side while placing the pod's inbuilt oxygen mask over your mouth and nose.\n5...\n4...\nYou brace yourself for the sudden jolt.\n3...\n2...\n1...\nThe pod bay door on the exterior of the ship opens rapidly and there is a short, loud 'thump!' followed by absolute silence as the pod bay depressurizes. You do not hear the monopropellant thrusters, you feel them rumbling against the back of your skull. As you drift off into space, you hear a change in the flow of oxygen as anaesthetic gas is released into your oxygen supply and you fall unconscious for cryosleep. \nCONGRATULATIONS! You have finished The Violet Star. Thank you for playing!\nWhen you are ready, enter anything to exit." << endl;
     cin >> command;
-  }
 }
 
 // Specification C3 - Input Validation
