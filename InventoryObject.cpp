@@ -4,7 +4,7 @@
 void InventoryObject::Use(int& UselessInt, bool& UselessBool, std::string UselessString)
 {
   //InventoryObject::Quantity -= 1;
-  std::cout << "Used 1 Cum " << InventoryObject::Quantity << std::endl;
+  std::cout << "Used 1 DefaultInventoryObject " << InventoryObject::Quantity << std::endl;
 };
 
 InventoryObject::InventoryObject()
